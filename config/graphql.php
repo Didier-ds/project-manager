@@ -75,6 +75,7 @@ return [
         'default' => [
             'query' => [
                 // ExampleQuery::class,
+                'projects' => App\GraphQl\Queries\ProjectsQuery::class
             ],
             'mutation' => [
                 // ExampleMutation::class,
@@ -108,6 +109,7 @@ return [
         // ExampleType::class,
         // ExampleRelationType::class,
         // \Rebing\GraphQL\Support\UploadType::class,
+        App\GraphQL\Types\ProjectType::class
     ],
 
     // The types will be loaded on demand. Default is to load all types on each request
